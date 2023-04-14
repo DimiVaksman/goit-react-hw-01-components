@@ -1,17 +1,28 @@
 import PropTypes from "prop-types"
+import {Container,Avatar,UserName,Tag,Location} from './Description.styled'
 
 export const Description = ({
     item:{username, tag, location, avatar}}) => {
 return (
-    <div>
-    <img
+    <Container>
+
+    <Avatar
       src={avatar}
       alt={username}
-      class="avatar"
     />
-    <p class="name">{username}</p>
-    <p class="tag">{tag}</p>
-    <p class="location">{location}</p>
-  </div>
+    <UserName>{username}</UserName>
+    <Tag>{tag}</Tag>
+    <Location>{location}</Location>
+  </Container>
 )
+}
+
+Description.propTypes = {
+    item: PropTypes.shape({
+        avatar: PropTypes.string.isRequired,
+        username: PropTypes.string.isRequired,
+        tag: PropTypes.string.isRequired,
+        location: PropTypes.string.isRequired,
+
+    }).isRequired
 }
