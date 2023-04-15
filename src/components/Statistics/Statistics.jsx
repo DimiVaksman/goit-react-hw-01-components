@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from "prop-types";
-import {Section, Title, StatList, ItemList} from "./Statistics.styled";
+import {Section, Title, StatList, ItemList,Label,Percentage} from "./Statistics.styled";
 
 
 
@@ -12,11 +12,19 @@ return (
 <StatList>
 {stats.map((item, idx) => (
 <ItemList key={item.id} id={item.id} index={idx} >
-    <span>{item.label}</span>
-    <span>{item.percentage}%</span>
+    <Label>{item.label}</Label>
+    <Percentage>{item.percentage}%</Percentage>
   </ItemList>
 ))}
   </StatList>
 </Section>
 )
+}
+
+Statistics.propTypes = {
+    stats: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+    })).isRequired,
 }

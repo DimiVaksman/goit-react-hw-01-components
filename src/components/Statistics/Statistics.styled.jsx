@@ -63,3 +63,13 @@ background-color: ${({index}) => {
     }
   }};
 `
+export const Label = styled.span`
+text-align: center;
+font-size: 12px;
+margin-bottom: 4px;
+`
+
+export const Percentage = styled.span`
+text-align: center;
+font-size: 8px;
+`
