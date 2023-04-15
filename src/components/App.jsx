@@ -4,7 +4,7 @@ import { Statistics } from "./Statistics/Statistics";
 import data from '../data.json'
 import friends from '../friends.json'
 
-import {FriendList} from './FriendList/FriendList'
+import {Friends} from './FriendList/FriendList'
 
 
 export const App = () => {
@@ -14,7 +14,7 @@ export const App = () => {
 
 <Statistics stats={data}/>
 
-<FriendList friends={friends}/>
+<Friends friends={friends}/>
 
     </div>
   );

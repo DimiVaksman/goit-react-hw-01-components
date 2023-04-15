@@ -13,7 +13,7 @@ export const StatsItems = styled.li`
 border: 0.5px solid black;
 box-shadow: -3px 2px 14px -9px rgba(0,0,0,0.95);
 text-shadow: rgb(0 0 0) 0px 0px 1px;
-
+flex-direction: column;
 width: 80px;
 padding-top: 8px;
 padding-bottom: 8px;
@@ -25,6 +25,11 @@ justify-content: center;
 `
 
 export const Label = styled.span`
+font-size: 14px;
+color: #90888d;
+`
+
+export const Info = styled.span`
 font-size: 14px;
 color: #90888d;
 `
