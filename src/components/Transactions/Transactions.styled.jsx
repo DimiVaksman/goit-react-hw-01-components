@@ -7,7 +7,7 @@ border: 1px solid ;
 box-shadow: -3px 2px 14px -5px rgb(0 0 0 / 95%);
 width: 440px;
 border-collapse: collapse;
-top: 167%;
+top: 185%;
 left: 6%;
 position: absolute;`
 
