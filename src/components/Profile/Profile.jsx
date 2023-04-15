@@ -1,7 +1,7 @@
-import { Description } from "components/description/Description";
+import { Description } from "components/Profile/description/Description";
 import { PropTypes } from "prop-types";
 import { ProfileStyles } from "./Profile.styled";
-import { ProfileStats } from "components/Stats/Stats";
+import { ProfileStats } from "components/Profile/Stats/Stats";
 
 
 export const Profile = ({items}) => {
