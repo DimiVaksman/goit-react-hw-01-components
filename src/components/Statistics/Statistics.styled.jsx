@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 
 export const Section = styled.section`
-margin: 0 auto;
-margin-top: 40px;
+top: 50%;
+left: 6%;
+position: absolute;
 background-color: #e5ecee;
 border: 1px solid black;
 box-shadow: -3px 2px 14px -5px rgb(0 0 0 / 95%);
 width: 240px;
-margin-left: 150px;
+
 `
 
 export const Title = styled.h2`

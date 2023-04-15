@@ -19,8 +19,14 @@ padding-top: 25px;
 padding-left: 15px;
 display: flex;
 align-items: baseline;
-border: 1px solid rgba(113,255,222,0.88);
-box-shadow: 10px 7px 32px 12px rgba(113,255,222,0.88);`
+border: 4px solid rgba(113,255,222,0.88);
+border-radius: 24px;
+background-color: rgb(229, 236, 238);
+margin-bottom: 10px;
+:hover{
+  cursor: pointer;
+  background-color: #fad6e0;
+}`
 
 
 export const Avatar = styled.img`
