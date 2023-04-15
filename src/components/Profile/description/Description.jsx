@@ -11,7 +11,7 @@ return (
       alt={username}
     />
     <UserName>{username}</UserName>
-    <Tag>{tag}</Tag>
+    <Tag>@{tag}</Tag>
     <Location>{location}</Location>
   </Container>
 )
