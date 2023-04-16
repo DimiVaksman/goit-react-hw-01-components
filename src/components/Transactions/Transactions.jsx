@@ -1,23 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { TableRow } from "./TableRow/TableRow";
-import { Table,TableHeader,Tr,Th,Tbody } from "./Transactions.styled";
+import { TableRow } from './TableRow/TableRow';
+import { Table, TableHeader, Tr, Th, Tbody } from './Transactions.styled';
 
-export const Transactions = ({trans}) => {
-    return (
-        <Table>
-  <TableHeader>
-    <Tr>
-      <Th>Type</Th>
-      <Th>Amount</Th>
-      <Th>Currency</Th>
-    </Tr>
-  </TableHeader>
+export const Transactions = ({ trans }) => {
+  return (
+    <Table>
+      <TableHeader>
+        <Tr>
+          <Th>Type</Th>
+          <Th>Amount</Th>
+          <Th>Currency</Th>
+        </Tr>
+      </TableHeader>
 
-
-    <Tbody>
-    {trans.map((item, idx) => {
+      <Tbody>
+        {trans.map((item, idx) => {
           return (
             <TableRow
               key={item.id}
@@ -29,19 +28,18 @@ export const Transactions = ({trans}) => {
             />
           );
         })}
-  </Tbody>
-
-</Table>
-    )
-}
+      </Tbody>
+    </Table>
+  );
+};
 
 Transactions.propTypes = {
-    trans: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        type: PropTypes.string.isRequired,
-        amount: PropTypes.string.isRequired,
-        currency: PropTypes.string.isRequired,
-      }).isRequired
-    ).isRequired,
-  };
+  trans: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+};
